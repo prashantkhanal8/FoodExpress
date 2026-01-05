@@ -1,39 +1,42 @@
-<svg width="240" height="80" viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg">
+<svg width="220" height="65" viewBox="0 0 220 65" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#FF6B35;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="100%" style="stop-color:#FFA500"/>
     </linearGradient>
   </defs>
   
-  <!-- Circular Arrow Background -->
-  <path d="M 40 20 A 25 25 0 1 1 20 40 L 15 35 L 25 25 Z" fill="url(#orangeGrad)" stroke="#2C3E50" stroke-width="2.5"/>
-  
-  <!-- Scooter Body -->
-  <ellipse cx="32" cy="38" rx="12" ry="6" fill="#FF6B35" stroke="#2C3E50" stroke-width="1.5"/>
-  <!-- Scooter Wheels -->
-  <circle cx="25" cy="42" r="3" fill="#2C3E50"/>
-  <circle cx="39" cy="42" r="3" fill="#2C3E50"/>
-  <!-- Motion Lines -->
-  <line x1="20" y1="42" x2="22" y2="42" stroke="#2C3E50" stroke-width="1.5"/>
-  <line x1="20" y1="40" x2="22" y2="40" stroke="#2C3E50" stroke-width="1.5"/>
-  
-  <!-- Delivery Box with Wings -->
-  <rect x="35" y="30" width="8" height="8" fill="#FF6B35" stroke="#2C3E50" stroke-width="1"/>
-  <rect x="36" y="31" width="2" height="2" fill="#2C3E50"/>
-  <path d="M 33 32 L 31 30 L 33 28 L 35 30 Z" fill="#FFA500" stroke="#2C3E50" stroke-width="0.8"/>
-  
-  <!-- Fork and Spoon Rider -->
-  <circle cx="30" cy="32" r="4" fill="#FF6B35" stroke="#2C3E50" stroke-width="1"/>
-  <!-- Fork -->
-  <path d="M 28 28 L 28 32 M 28 30 L 26 31 M 28 30 L 30 31" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" fill="none"/>
-  <!-- Spoon -->
-  <path d="M 32 28 L 32 32 M 32 32 Q 32 34 30 35" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Icon Container Circle -->
+  <g transform="translate(32, 32)">
+    <!-- Outer Circle with Arrow -->
+    <circle cx="0" cy="0" r="28" fill="none" stroke="url(#orangeGradient)" stroke-width="3"/>
+    <path d="M 20 -20 A 28 28 0 0 1 -20 20 L -15 15 L 15 -15 Z" fill="url(#orangeGradient)" stroke="#2C3E50" stroke-width="2"/>
+    
+    <!-- Scooter -->
+    <ellipse cx="-2" cy="8" rx="10" ry="4" fill="#FF6B35" stroke="#2C3E50" stroke-width="1.5"/>
+    <circle cx="-8" cy="10" r="2.5" fill="#2C3E50"/>
+    <circle cx="4" cy="10" r="2.5" fill="#2C3E50"/>
+    
+    <!-- Delivery Box -->
+    <rect x="2" y="2" width="6" height="6" fill="#FF6B35" stroke="#2C3E50" stroke-width="1"/>
+    <!-- Wings -->
+    <path d="M 0 2 L -3 0 L 0 -2 L 2 0 Z" fill="#FFA500" stroke="#2C3E50" stroke-width="0.8"/>
+    
+    <!-- Fork & Spoon Rider -->
+    <circle cx="-2" cy="4" r="3" fill="#FF6B35" stroke="#2C3E50" stroke-width="1"/>
+    <!-- Fork -->
+    <line x1="-4" y1="1" x2="-4" y2="4" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="-4" y1="2.5" x2="-5.5" y2="3.5" stroke="#FFA500" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="-4" y1="2.5" x2="-2.5" y2="3.5" stroke="#FFA500" stroke-width="1.2" stroke-linecap="round"/>
+    <!-- Spoon -->
+    <line x1="0" y1="1" x2="0" y2="4" stroke="#FFA500" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 0 4 Q 0 6 -1.5 7" stroke="#FFA500" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  </g>
   
   <!-- Food Express Text -->
-  <text x="75" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#2C3E50">Food</text>
-  <text x="75" y="52" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#FF6B35">Express</text>
+  <text x="75" y="28" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700" fill="#2C3E50" letter-spacing="-0.5">Food</text>
+  <text x="75" y="50" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="700" fill="#FF6B35" letter-spacing="-0.5">Express</text>
   
   <!-- Tagline -->
-  <text x="75" y="65" font-family="Arial, sans-serif" font-size="11" fill="#7F8C8D">Fast &amp; Fresh Delivery</text>
+  <text x="75" y="62" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#7F8C8D" letter-spacing="0.5">Fast &amp; Fresh Delivery</text>
 </svg>

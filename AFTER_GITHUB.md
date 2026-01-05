@@ -42,7 +42,7 @@ Fill in these settings:
 Click **"Add Environment Variable"** and add these one by one:
 
 ```
-MONGO_URI=mongodb+srv://pr2928272625_db_user:tXf_3qPiV5U_.Ar@foodexpress.4ctdzcm.mongodb.net/foodexpress?appName=FoodExpress
+MONGO_URI=mongodb+srv://pr2928272625_db_user:YOUR_ACTUAL_PASSWORD@foodexpress.4ctdzcm.mongodb.net/foodexpress?appName=FoodExpress
 ```
 
 ```

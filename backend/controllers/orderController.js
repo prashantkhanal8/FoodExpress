@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // config variables
 const currency = "inr";
 const deliveryCharge = 50;
-const frontend_URL = 'https://tomato-frontend-ds0g.onrender.com';
+const frontend_URL = process.env.FRONTEND_URL || 'http://localhost:5173';
 
 // Placing User Order for Frontend
 const placeOrder = async (req, res) => {
@@ -44,8 +44,8 @@ const placeOrder = async (req, res) => {
         })
         
           const session = await stripe.checkout.sessions.create({
-            success_url: `http://localhost:5173/verify?success=true&orderId=${newOrder._id}`,
-            cancel_url: `http://localhost:5173/verify?success=false&orderId=${newOrder._id}`,
+            success_url: `${frontend_URL}/verify?success=true&orderId=${newOrder._id}`,
+            cancel_url: `${frontend_URL}/verify?success=false&orderId=${newOrder._id}`,
             line_items: line_items,
             mode: 'payment',
           });

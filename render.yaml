@@ -1,0 +1,39 @@
+services:
+  # Backend Service
+  - type: web
+    name: foodexpress-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false  # Set this in Render dashboard
+      - key: JWT_SECRET
+        sync: false  # Set this in Render dashboard
+      - key: STRIPE_SECRET_KEY
+        sync: false  # Set this in Render dashboard
+      - key: PORT
+        value: 4000
+
+  # Frontend Service
+  - type: web
+    name: foodexpress-frontend
+    env: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false  # Set this to your backend URL after deployment
+
+  # Admin Panel Service
+  - type: web
+    name: foodexpress-admin
+    env: static
+    buildCommand: cd admin && npm install && npm run build
+    staticPublishPath: admin/dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false  # Set this to your backend URL after deployment
+

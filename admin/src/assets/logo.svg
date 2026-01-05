@@ -1,13 +1,11 @@
-<svg width="180" height="50" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background circle/icon area -->
-  <circle cx="25" cy="25" r="20" fill="#FF6B35" stroke="#2C3E50" stroke-width="2"/>
-  <!-- Fork icon -->
-  <path d="M 20 12 L 20 20 M 20 17 L 16 19 M 20 17 L 24 19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
-  <!-- Spoon icon -->
-  <path d="M 30 12 L 30 20 M 30 20 Q 30 23 28 24" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" fill="none"/>
+<svg width="180" height="50" viewBox="0 0 180 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular icon background -->
+  <circle cx="25" cy="25" r="22" fill="#FF6B35"/>
   
-  <!-- FoodExpress Text -->
-  <text x="55" y="22" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2C3E50">Food</text>
-  <text x="55" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#FF6B35">Express</text>
+  <!-- J symbol/icon inside circle -->
+  <text x="25" y="31" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF" text-anchor="middle">J</text>
+  
+  <!-- Food Express Text -->
+  <text x="55" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#2C3E50">Food</text>
+  <text x="55" y="40" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#FF6B35">Express</text>
 </svg>
-
